@@ -1,0 +1,12 @@
+FROM php:7-apache
+
+
+#As permissões dos arquivos do condigo fonte funcionem no windows
+
+RUN chown -R root:www-data /var/www/html
+RUN chmod -R u+rwx,g+rx,o+rw /var/www/html
+RUN chown -R root:www-data /logs/apache
+RUN chmod -R u+rwx,g+rwx,o+rw /logs/apache
+
+EXPOSE 80
+EXPOSE 443

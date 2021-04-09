@@ -1,0 +1,16 @@
+version: "3"
+services:
+    apache-php7:
+        container_name: "webservice"
+        volumes:
+            - .:/var/www/html
+        image: php:7-apache
+        ports:
+            - 80:80
+            - 443:443
+        networks: 
+            - mynetwork
+        restart: always
+networks: 
+    mynetwork:
+        driver: bridge
