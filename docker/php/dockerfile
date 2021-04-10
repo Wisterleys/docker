@@ -5,6 +5,8 @@ FROM php:7-apache
 
 RUN chown -R root:www-data /var/www/html
 RUN chmod -R u+rwx,g+rx,o+rw /var/www/html
+
+RUN mkdir -p /logs/apache
 RUN chown -R root:www-data /logs/apache
 RUN chmod -R u+rwx,g+rwx,o+rw /logs/apache
 
