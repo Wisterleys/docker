@@ -14,3 +14,6 @@
 * ```mysql -u <usuário> -p <após o enter pedirá a senha> <nome do banco> < file.sql```
 #### Comando para restaurar DB mongo
 * ```mongorestore --verbose <nome do arquivo>``` Obs: esse comando criará tudo que tem no arquivo, ou seja, será criado as coleções e os documentos.
+
+#### Ativar htaccess no terminal do container do app
+* ```sudo a2enmod rewrite``` e ```sudo service apache2 restart``` Obs: Pode ser que não precise do ```sudo```
