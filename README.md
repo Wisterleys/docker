@@ -12,8 +12,12 @@
 * ```docker exec -it <nome do container> bash```
 #### Comando para restaurar DB mysql
 * ```mysql -u <usuário> -p <após o enter pedirá a senha> <nome do banco> < file.sql```
+#### Comando para backup DB mysql
+* ```mysqldump -u <usuário> -p <após o enter pedirá a senha> <nome do banco> > file.sql```
 #### Comando para restaurar DB mongo
 * ```'mongorestore --archive' < db.dump``` Obs: esse comando criará tudo que tem no arquivo, ou seja, será criado as coleções e os documentos.
+#### Comando para backup DB mongo
+* ```mongodump --out "nomedoarquivo.dump"```
 
 #### Ativar htaccess no terminal do container do app
 * Acessa o terminal do app e executa ```sudo a2enmod rewrite``` e ```sudo service apache2 restart``` Obs: Pode ser que não precise do ```sudo```
