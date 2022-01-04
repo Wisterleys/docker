@@ -10,6 +10,8 @@
 * ```docker container stop <nome do container>``` Obs: pode usar start, stop  para iniciar e parar
 #### Acessar terminal do container desejado
 * ```docker exec -it <nome do container> bash```
+* #### Comando para copiar arquivo para um container docker
+* ```docker cp <nome do arquivo> <nome do cotainer>:/<aqui coloca o target para jogar o arquivo>```
 #### Comando para restaurar DB mysql
 * ```mysql -u <usuário> -p <após o enter pedirá a senha> <nome do banco> < file.sql```
 #### Comando para backup DB mysql
