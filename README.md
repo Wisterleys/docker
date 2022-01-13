@@ -14,6 +14,8 @@
 * ```docker exec -it <nome do container> bash```
 * #### Comando para copiar arquivo para um container docker
 * ```docker cp <nome do arquivo> <nome do cotainer>:/<aqui coloca o target para jogar o arquivo>```
+* #### Comando para copiar arquivo dentro de um container escolhido
+* ```docker cp <nome ou id do container>:/<path para localização do arquivo> <path para cuspir o arquivo no host> exemplo: docker cp 1b4a:/out_read.jpg .```
 #### Comando para restaurar DB mysql
 * ```mysql -u <usuário> -p <após o enter pedirá a senha> <nome do banco> < file.sql```
 #### Comando para backup DB mysql
