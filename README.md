@@ -6,6 +6,8 @@
 ## Comandos docker
 #### Subir todos os containers
 * ```docker-compose up```
+#### Comando para listar todos o containers
+* ```docker ps -a```
 #### Parar um container
 * ```docker container stop <nome do container>``` Obs: pode usar start, stop  para iniciar e parar
 #### Acessar terminal do container desejado
