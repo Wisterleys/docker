@@ -27,3 +27,14 @@
 
 #### Ativar htaccess no terminal do container do app
 * Acessa o terminal do app e executa ```sudo a2enmod rewrite``` e ```sudo service apache2 restart``` Obs: Pode ser que não precise do ```sudo```
+
+# Atenção especial para DOCKER
+#### ARemovendo todos os objetos do Docker não usados
+* O ```docker system prune ``` comando remove todos os contêineres parados, imagens pendentes e redes não utilizadas 
+* Use a opção -f( --force) para ignorar o prompt.
+
+* Se você deseja remover todas as imagens não utilizadas, não apenas as pendentes, adicione a opção -a( --all) ao comando:
+* ```docker system prune -a```
+* Por padrão, o comando não remove volumes não utilizados para evitar a perda de dados importantes. Para remover todos os volumes não utilizados, passe a --volumesopção:
+* ```docker system prune --volumes```
+* ```docker system prune --volumes -f -a``` remove TODOS os volumes não utilizados
