@@ -38,3 +38,4 @@
 * Por padrão, o comando não remove volumes não utilizados para evitar a perda de dados importantes. Para remover todos os volumes não utilizados, passe a --volumesopção:
 * ```docker system prune --volumes```
 * ```docker system prune --volumes -f -a``` remove TODOS os volumes não utilizados
+* mais informações https://linuxize.com/post/how-to-remove-docker-images-containers-volumes-and-networks/#:~:text=Stop%20and%20remove%20all%20containers,-To%20stop%20all&text=The%20command%20docker%20container%20ls,by%20the%20containers%20ID%20list.
