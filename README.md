@@ -30,6 +30,8 @@
 
 # Atenção especial para DOCKER
 #### ARemovendo todos os objetos do Docker não usados
+##### Ao dar um docker-composer down para remover todos os containers, imagen e volumes:
+```docker-compose down -v --rmi all```
 * O ```docker system prune ``` comando remove todos os contêineres parados, imagens pendentes e redes não utilizadas 
 * Use a opção -f( --force) para ignorar o prompt.
 
